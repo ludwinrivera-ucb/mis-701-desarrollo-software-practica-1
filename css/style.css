@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #dbdee3;
+  color: #1f2937;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px 80px;
+}
+
+
+.banner {
+  width: 50%;
+  padding: 40px;
+  color: #1f2937;
+}
+
+.banner-logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #1d4ed8;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner-title {
+  margin: 20px 0 12px;
+  color: #1d4ed8;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.banner h1 {
+  max-width: 500px;
+  margin: 0 0 20px;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.banner-text {
+  max-width: 480px;
+  margin: 0;
+  color: #6b7280;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.login-form {
+  width: 50%;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #b4cdf9;
+}
+
+.welcome {
+  margin: 0 0 8px;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.login-form h2 {
+  margin: 0 0 28px;
+  font-size: 2rem;
+  color: #1f2937;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #b4cdf9;
+  border-radius: 8px;
+  background: #f9fbff;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.login-form button:hover {
+  background: #1d4ed8;
+}
+
+.banner,
+.login-form {
+  width: 50%;
+}
