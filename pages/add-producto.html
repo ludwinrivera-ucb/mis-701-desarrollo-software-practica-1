@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Librería Ideas | Registrar Producto</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
-    
+    <header>
+        <div class="top-bar">
+            <div class="banner-logo">I</div>
+            <span>Librería Ideas</span>
+            <a href="../index.html" class="sale-link">Cerrar sesión</a>
+        </div>
+        <nav>
+            <a href="../dashboard.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a class="active" href="add-producto.html">Registrar producto</a>
+            <a href="ventas.html">Ventas</a>
+            <a href="add-venta.html">Registrar venta</a>
+        </nav>
+
+    </header>
+    <main>
+        <div class="content-header">
+            <h2>Nuevo producto</h2>
+        </div>
+
+        <div class="form-register">
+            <form id="form-add-product" action="productos.html" method="get">
+                <div class="full-width">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Ej. Cuaderno espiral 100 hojas" required>
+                </div>
+                <div>
+                    <label for="category">Categoria</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Seleccione una categoría</option>
+                        <option value="books">Cuadernos y Papelería</option>
+                        <option value="pencils">Escritura y Colores</option>
+                        <option value="paint">Arte y Manualidades</option>
+                        <option value="geometry">Reglas y Geometría</option>
+                        <option value="glues">Pegamentos y Tijeras</option>
+                        <option value="bags">Mochilas y Estuches</option>
+                        <option value="others">Otros útiles</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="brand">Marca</label>
+                    <input type="text" id="brand" name="brand" placeholder="Ej. Faber-Castell, Líder, Artesco">
+                </div>
+                <div>
+                    <label for="sku">Codigo</label>
+                    <input type="text" id="sku" name="sku" placeholder="Ej. ART-1024">
+                </div>
+                <div>
+                    <label for="price">Precio</label>
+                    <input type="number" id="price" name="price" step="0.50" min="0" placeholder="0.00" required>
+                </div>
+                <div>
+                    <label for="stock">Cantidad</label>
+                    <input type="number" id="stock" name="stock" min="0" placeholder="0" required>
+                </div>
+
+                <div>
+                    <label for="min_stock">Stock minimo</label>
+                    <input type="number" id="min_stock" name="min_stock" min="1" placeholder="Ej. 5">
+                </div>
+
+                <div class="full-width">
+                    <label for="description">Descripción</label>
+                    <textarea id="description" name="description" rows="3"
+                        placeholder="Detalles o características del producto (color, tamaño, presentación)..."></textarea>
+                </div>
+
+                <!-- Acciones del formulario -->
+                <div class="full-width">
+                    <button type="submit">Guardar producto</button>
+                    <a href="productos.html">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Librería Ideas. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/ideas.js"></script>
 </body>
+
 </html>
