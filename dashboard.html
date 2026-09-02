@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Ideas | Dashboard</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="banner-logo">I</div>
+      <span>Librería Ideas</span>
+      <a href="index.html" class="sale-link">Cerrar sesión</a>
+    </div>
+    <nav>
+      <a class="active" href="dashboard.html">Inicio</a>
+      <a href="pages/productos.html">Productos</a>
+      <a href="pages/add-producto.html">Registrar producto</a>
+      <a href="pages/ventas.html">Ventas</a>
+      <a href="pages/add-venta.html">Registrar venta</a>
+    </nav>
+
+  </header>
+  <main>
+    <div class="content-header">
+      <h2>Estadisticas y metricas</h2>
+    </div>
+
+    <section class="content-grid">
+      <div class="card-metric">
+        <div class="label">Productos registrados</div>
+        <div class="value">1,248</div>
+        <div class="trend">↑ 14% este mes</div>
+      </div>
+
+      <div class="card-metric">
+        <div class="label">Ventas del mes</div>
+        <div class="value">18.450 Bs.</div>
+        <div class="trend">↑ 9%</div>
+      </div>
+
+      <div class="card-metric">
+        <div class="label">Ventas del dia</div>
+        <div class="value">267 Bs.</div>
+        <div class="trend">↑ 80 Bs. mas que ayer</div>
+      </div>
+
+      <div class="card-metric">
+        <div class="label">Stock bajo</div>
+        <div class="value">18</div>
+        <div class="trend">⚠️ Reponer pronto</div>
+      </div>
+    </section>
+
+    <section class="table">
+      <div class="table-panel">
+        <div class="table-header">
+          <h3>Actividad reciente</h3>
+          <a href="pages/ventas.html" class="sale-link">Ver todo</a>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  </main>
+  <footer>
+    <p>&copy; 2026 Librería Ideas. All rights reserved.</p>
+  </footer>
+  <script src="./js/ideas.js"></script>
+</body>
