@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -202,19 +202,19 @@ nav a.active {
   border-bottom-color: #1d4ed8;
 }
 
-.stadistics-header {
+.content-header {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.stadistics-header h2 {
+.content-header h2 {
   margin: 0;
   font-size: 2rem;
   color: #1f2937;
 }
 
-.stadistics-grid {
+.content-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -252,19 +252,19 @@ nav a.active {
   font-weight: 600;
 }
 
-.activity-panel {
+.table-panel {
   width: 70%;
   margin: 0 auto;
 }
 
-.activity-header {
+.table-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.activity-header h3 {
+.table-header h3 {
   margin: 0;
   font-size: 1.5rem;
   color: #1f2937;
@@ -304,6 +304,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
+  table-layout: fixed;
 }
 
 thead {
@@ -362,6 +363,92 @@ td {
 .status.danger {
   background: #fee2e2;
   color: #dc2626;
+}
+
+.form-register {
+  width: 70%;
+  margin: 0 auto 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #b4cdf9;
+}
+
+.form-register form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-register .full-width {
+  grid-column: span 2;
+}
+
+.form-register label {
+  display: block;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.form-register input,
+.form-register select,
+.form-register textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #b4cdf9;
+  border-radius: 8px;
+  background: #f9fbff;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #1f2937;
+}
+
+.form-register input:focus,
+.form-register select:focus,
+.form-register textarea:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  background: #ffffff;
+}
+
+.form-register textarea {
+  resize: vertical;
+}
+
+.form-register button[type="submit"] {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-register button[type="submit"]:hover {
+  background: #163cad;
+}
+
+.form-register a {
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: #f4f6fb;
+  border: 1px solid #dfe7f5;
+  transition: all 0.2s ease;
+  margin-left: 12px;
+}
+
+.form-register a:hover {
+  background: #dfe7f5;
+  color: #1f2937;
 }
 
 footer {
