@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -31,14 +31,14 @@
         </div>
 
         <div class="form-register">
-            <form id="form-add-product" action="productos.html" method="get">
+            <form class="form-add-product" action="productos.html" method="get">
                 <div class="full-width">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" placeholder="Ej. Cuaderno espiral 100 hojas" required>
+                    <label>Nombre</label>
+                    <input type="text" name="name" placeholder="Ej. Cuaderno espiral 100 hojas" required>
                 </div>
                 <div>
-                    <label for="category">Categoria</label>
-                    <select id="category" name="category" required>
+                    <label>Categoría</label>
+                    <select name="category" required>
                         <option value="" disabled selected>Seleccione una categoría</option>
                         <option value="books">Cuadernos y Papelería</option>
                         <option value="pencils">Escritura y Colores</option>
@@ -51,30 +51,30 @@
                 </div>
 
                 <div>
-                    <label for="brand">Marca</label>
-                    <input type="text" id="brand" name="brand" placeholder="Ej. Faber-Castell, Líder, Artesco">
+                    <label>Marca</label>
+                    <input type="text" name="brand" placeholder="Ej. Faber-Castell, Líder, Artesco">
                 </div>
                 <div>
-                    <label for="sku">Codigo</label>
-                    <input type="text" id="sku" name="sku" placeholder="Ej. ART-1024">
+                    <label>Código / SKU</label>
+                    <input type="text" name="sku" placeholder="Ej. ART-1024">
                 </div>
                 <div>
-                    <label for="price">Precio</label>
-                    <input type="number" id="price" name="price" step="0.50" min="0" placeholder="0.00" required>
+                    <label>Precio (Bs.)</label>
+                    <input type="number" name="price" step="0.50" min="0" placeholder="0.00" required>
                 </div>
                 <div>
-                    <label for="stock">Cantidad</label>
-                    <input type="number" id="stock" name="stock" min="0" placeholder="0" required>
+                    <label>Cantidad</label>
+                    <input type="number" name="stock" min="0" placeholder="0" required>
                 </div>
 
                 <div>
-                    <label for="min_stock">Stock minimo</label>
-                    <input type="number" id="min_stock" name="min_stock" min="1" placeholder="Ej. 5">
+                    <label>Stock mínimo</label>
+                    <input type="number" name="min_stock" min="1" placeholder="Ej. 5">
                 </div>
 
                 <div class="full-width">
-                    <label for="description">Descripción</label>
-                    <textarea id="description" name="description" rows="3"
+                    <label>Descripción</label>
+                    <textarea name="description" rows="3"
                         placeholder="Detalles o características del producto (color, tamaño, presentación)..."></textarea>
                 </div>
 

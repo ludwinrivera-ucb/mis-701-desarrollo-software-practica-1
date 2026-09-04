@@ -274,20 +274,20 @@ const CATEGORY_NAMES = {
 };
 
 function setupAddProductForm() {
-    const form = document.getElementById("form-add-product") || document.querySelector(".form-register form, form");
-    if (!form || !document.getElementById("name") || !document.getElementById("sku")) return;
+    const form = document.querySelector(".form-add-product, .form-register form");
+    if (!form || !form.elements['name'] || !form.elements['sku']) return;
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const name = document.getElementById("name")?.value.trim();
-        const category = document.getElementById("category")?.value;
-        const brand = document.getElementById("brand")?.value.trim();
-        const sku = document.getElementById("sku")?.value.trim();
-        const price = parseFloat(document.getElementById("price")?.value) || 0;
-        const stock = parseInt(document.getElementById("stock")?.value, 10) || 0;
-        const min_stock = parseInt(document.getElementById("min_stock")?.value, 10) || 5;
-        const description = document.getElementById("description")?.value.trim();
+        const name = form.elements['name']?.value.trim();
+        const category = form.elements['category']?.value;
+        const brand = form.elements['brand']?.value.trim();
+        const sku = form.elements['sku']?.value.trim();
+        const price = parseFloat(form.elements['price']?.value) || 0;
+        const stock = parseInt(form.elements['stock']?.value, 10) || 0;
+        const min_stock = parseInt(form.elements['min_stock']?.value, 10) || 5;
+        const description = form.elements['description']?.value.trim();
 
         if (!name) {
             alert("Por favor ingrese el nombre del producto.");
@@ -313,10 +313,10 @@ function setupAddProductForm() {
 }
 
 function setupAddSaleForm() {
-    const form = document.getElementById("form-add-sale") || document.querySelector(".form-register form, form");
-    if (!form || !document.getElementById("product") || document.getElementById("sku")) return;
+    const form = document.querySelector(".form-add-sale, .form-register form");
+    if (!form || !form.elements['product'] || form.elements['sku']) return;
 
-    const dateInput = document.getElementById("date");
+    const dateInput = form.elements['date'];
     if (dateInput && !dateInput.value) {
         dateInput.value = new Date().toISOString().split("T")[0];
     }
@@ -324,14 +324,14 @@ function setupAddSaleForm() {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const product = document.getElementById("product")?.value.trim();
-        const quantity = parseInt(document.getElementById("quantity")?.value, 10) || 1;
-        const price = parseFloat(document.getElementById("price")?.value) || 0;
-        const rawDate = document.getElementById("date")?.value;
-        const status = document.getElementById("status")?.value || "ok";
-        const customer = document.getElementById("customer")?.value?.trim() || "";
-        const payment_method = document.getElementById("payment_method")?.value || "efectivo";
-        const notes = document.getElementById("notes")?.value?.trim() || "";
+        const product = form.elements['product']?.value.trim();
+        const quantity = parseInt(form.elements['quantity']?.value, 10) || 1;
+        const price = parseFloat(form.elements['price']?.value) || 0;
+        const rawDate = form.elements['date']?.value;
+        const status = form.elements['status']?.value || "ok";
+        const customer = form.elements['customer']?.value?.trim() || "";
+        const payment_method = form.elements['payment_method']?.value || "efectivo";
+        const notes = form.elements['notes']?.value?.trim() || "";
 
         if (!product) {
             alert("Por favor ingrese el nombre del producto.");
