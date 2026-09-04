@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -31,31 +31,31 @@
         </div>
 
         <div class="form-register">
-            <form id="form-add-sale" action="ventas.html" method="get">
+            <form class="form-add-sale" action="ventas.html" method="get">
                 <div class="full-width">
-                    <label for="product">Producto</label>
-                    <input type="text" id="product" name="product" placeholder="Ej. Cuaderno espiral 100 hojas Líder"
+                    <label>Producto</label>
+                    <input type="text" name="product" placeholder="Ej. Cuaderno espiral 100 hojas Líder"
                         required>
                 </div>
 
                 <div>
-                    <label for="quantity">Cantidad</label>
-                    <input type="number" id="quantity" name="quantity" min="1" value="1" placeholder="1" required>
+                    <label>Cantidad</label>
+                    <input type="number" name="quantity" min="1" value="1" placeholder="1" required>
                 </div>
 
                 <div>
-                    <label for="price">Precio unitario (Bs.)</label>
-                    <input type="number" id="price" name="price" step="0.50" min="0" placeholder="0.00" required>
+                    <label>Precio unitario (Bs.)</label>
+                    <input type="number" name="price" step="0.50" min="0" placeholder="0.00" required>
                 </div>
 
                 <div>
-                    <label for="date">Fecha de la venta</label>
-                    <input type="date" id="date" name="date" required>
+                    <label>Fecha de la venta</label>
+                    <input type="date" name="date" required>
                 </div>
 
                 <div>
-                    <label for="status">Estado del pago</label>
-                    <select id="status" name="status" required>
+                    <label>Estado del pago</label>
+                    <select name="status" required>
                         <option value="ok" selected>Pagado</option>
                         <option value="warn">En proceso</option>
                         <option value="danger">Pendiente</option>
@@ -63,13 +63,13 @@
                 </div>
 
                 <div>
-                    <label for="customer">Cliente (Opcional)</label>
-                    <input type="text" id="customer" name="customer" placeholder="Ej. Juan Pérez">
+                    <label>Cliente (Opcional)</label>
+                    <input type="text" name="customer" placeholder="Ej. Juan Pérez">
                 </div>
 
                 <div>
-                    <label for="payment_method">Método de pago</label>
-                    <select id="payment_method" name="payment_method">
+                    <label>Método de pago</label>
+                    <select name="payment_method">
                         <option value="efectivo" selected>Efectivo</option>
                         <option value="qr">Transferencia / QR</option>
                         <option value="tarjeta">Tarjeta Débito/Crédito</option>
@@ -77,8 +77,8 @@
                 </div>
 
                 <div class="full-width">
-                    <label for="notes">Notas o detalles adicionales</label>
-                    <textarea id="notes" name="notes" rows="2"
+                    <label>Notas o detalles adicionales</label>
+                    <textarea name="notes" rows="2"
                         placeholder="Observaciones sobre la venta o entrega..."></textarea>
                 </div>
 
